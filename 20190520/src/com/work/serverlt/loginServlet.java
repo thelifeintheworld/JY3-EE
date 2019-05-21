@@ -1,5 +1,7 @@
 package com.work.serverlt;
 
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
 import java.io.IOException;
 @WebServlet(name = "loginServlet" ,urlPatterns = "/login.do")
 class loginServlet extends HttpServlet {
