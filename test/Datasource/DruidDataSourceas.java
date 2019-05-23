@@ -25,8 +25,9 @@ private  DruidDataSourceas(){
     }
     public Connection getConn(){
     Connection connection = null;
+    properties=new Properties();
         try {
-            properties.load(DruidDataSourceas.class.getResourceAsStream("/mysqlprop"));
+            properties.load(DruidDataSourceas.class.getResourceAsStream("/mysql.properties"));
            DataSource dataSource =  DruidDataSourceFactory.createDataSource(properties);
            connection=dataSource.getConnection();
            return connection;
@@ -43,5 +44,4 @@ DruidDataSourceas druidDataSource = new DruidDataSourceas();
 Connection connection = druidDataSource.getConn();
 System.out.println(connection);
 }
-
 }
