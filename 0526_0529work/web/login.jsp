@@ -11,6 +11,10 @@
     <title>登录</title>
 </head>
 <body>
-
+<form action="login.do" method="post">
+    用户名：<input type="text" placeholder="请输入用户名"name="username">
+    密码：<input type="password" placeholder="密码"name="psw">
+    <input type="submit" value="登录">
+</form>
 </body>
 </html>

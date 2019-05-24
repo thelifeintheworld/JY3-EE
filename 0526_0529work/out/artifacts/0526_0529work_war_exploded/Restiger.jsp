@@ -12,10 +12,6 @@
 </head>
 <body>
 <h1>注册成功</h1>
-<form action="res.do" method="post">
-用户名：<input type="text" value="请输入用户名"name="username">
-密码：<input type="password" value="密码"name="psw">
-<input type="submit" value="注册">
-</form>
+<a href="login.jsp"><button>返回登录</button></a>
 </body>
 </html>
